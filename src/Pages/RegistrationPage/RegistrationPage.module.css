@@ -1,0 +1,59 @@
+.registerContainer {
+  min-width: 768px;
+  /* display: flex; */
+  background: url(../../assets/BG.png);
+  /* background-size: cover; */
+  margin-left: 600px;
+  /* width: 100%; */
+
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  justify-content: center;
+  gap: 32px;
+
+  border-color: red;
+}
+
+.registerContainerInner {
+  padding: 29px 32px 0;
+  display: flex;
+  gap: 62px;
+}
+
+.registerLeftBox {
+  width: 100%;
+  /* width: 336px; */
+  max-width: 280px;
+}
+
+.registerLogoIcon {
+  margin-bottom: 45px;
+}
+
+.registerImage {
+  margin-bottom: 12px;
+}
+
+.registerImageStart {
+  margin-bottom: 24px;
+}
+
+.registerTitle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0%;
+  color: #010101;
+  margin-bottom: 24px;
+}
+
+.registerText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #010101;
+}
+
+.registerForm {
+}
