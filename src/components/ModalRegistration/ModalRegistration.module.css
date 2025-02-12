@@ -1,9 +1,9 @@
 .modalContainer {
-  display: flex;
   justify-content: flex-end;
-  max-width: 360px;
-  background-color: rgb(190, 217, 241);
-  /* margin: 0 auto; */
+  width: 360px;
+  height: 680px;
+  background-color: white;
+  padding: 29px 20px;
   position: relative;
 }
 
@@ -11,6 +11,19 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 58px;
+}
+
+.closeBtn {
+  border: none;
+  position: absolute;
+  display: block;
+  top: 28px;
+  right: 20px;
+  background: none;
+  border: none;
+
+  cursor: pointer;
+  padding: 0;
 }
 
 .timerBox {
@@ -51,8 +64,8 @@
 }
 
 .formInputNumber {
-  width: 100%;
-  padding: 12px 48px;
+  width: 304px;
+  padding: 12px 0 12px 48px;
   background-color: #f2f4fa;
   margin-bottom: 20px;
   color: #767b8e;
@@ -82,7 +95,7 @@
 }
 
 .formBtnSubmit {
-  width: 100%;
+  width: 350px;
   background-color: #0f7c41;
   color: white;
   font-weight: 700;
@@ -96,21 +109,19 @@
 }
 
 .formErrorMessage {
-  margin-bottom: 20px;
+  margin-bottom: 6px;
   color: red;
 }
 
 .modalOverlay {
-  /* position: absolute;
-  top: 10%;
-  left: 52.8%;
-  width: 100%;
-  display: flex; */
-
   position: absolute;
   top: 46%;
   left: 66%;
   transform: translate(-50%, -50%);
+}
+
+.containerForm {
+  width: 320px;
 }
 
 .modalContent {
@@ -126,41 +137,25 @@
   border-color: none;
 }
 
-.formWrapper {
-}
-
-@media (max-width: 768px) {
-  .timerTitle,
-  .modalContent .formBtnSubmit {
-    display: block; /* Покажемо ці елементи */
-  }
-
-  .closeBtn,
-  .logo,
-  .formWrapper,
-  .inputWrapper,
-  .formInputCheckBox {
-    display: none;
-  }
-
-  .headerModal {
-    margin-bottom: 0;
-  }
-}
-
 @media (min-width: 768px) {
-  .timerTitle,
-  .formWrapper,
-  .inputWrapper {
-    display: block;
+  .modalContainer {
+    width: 336px;
+    height: 518px;
+    margin-top: 81px;
   }
-
-  .closeBtn,
-  .logo {
+  .headerModal {
     display: none;
   }
 
-  .headerModal {
-    margin-bottom: 0;
+  .containerForm {
+    width: 296px;
+  }
+
+  .formBtnSubmit {
+    width: 328px;
+  }
+
+  .formInputNumber {
+    width: 280px;
   }
 }

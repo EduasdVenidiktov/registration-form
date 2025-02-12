@@ -2,10 +2,12 @@
   /* padding: 29px 32px 0; */
   display: flex;
   gap: 62px;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .registerLeftBox {
-  max-width: 280px;
+  /* max-width: 360px; */
 }
 
 .registerLogoIcon {
@@ -37,33 +39,121 @@
   color: #010101;
 } */
 
-@media (max-width: 768px) {
+.registerContainer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.registerLogoIcon {
+  margin-bottom: 16px;
+}
+.registerImage {
+  max-width: 207px;
+  margin-bottom: 8px;
+}
+.registerImageStart {
+  max-width: 188px;
+  margin-bottom: 16px;
+}
+
+.registerTitle {
+  margin-bottom: 16px;
+  max-width: 240px;
+
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0%;
+}
+
+.registerText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  max-width: 280px;
+  margin-bottom: 24px;
+}
+
+.registerContainer {
+  width: 360px;
+  height: 728px;
+  background: url(../../assets/bgMob.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.registerForm {
+  width: 320px;
+  height: 242px;
+  background-color: white;
+  padding: 32px 20px;
+}
+
+.timerTitle {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #010101;
+  margin-bottom: 24px;
+}
+
+.formBtnSubmit {
+  width: 100%;
+  background-color: #0f7c41;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  padding: 16px 0;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
   .registerContainer {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
+    width: 768px;
+    height: 680px;
+    background: url(../../../public/bg.png);
+    padding: 29px 32px 81px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
   }
+  .registerForm {
+    display: none;
+  }
+
   .registerLogoIcon {
-    margin-bottom: 16px;
+    margin-bottom: 45px;
   }
+
   .registerImage {
-    max-width: 207px;
-    margin-bottom: 8px;
+    width: 252px;
+    margin-bottom: 12px;
   }
   .registerImageStart {
-    max-width: 188px;
-    margin-bottom: 16px;
+    width: 230px;
+    margin-bottom: 24px;
   }
 
   .registerTitle {
-    padding-bottom: 16px;
-    max-width: 200px;
-
+    width: 336px;
+    /* height: 176px; */
+    font-family: Montserrat;
     font-weight: 700;
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 36px;
+    line-height: 44px;
     letter-spacing: 0%;
     color: #010101;
+    margin-bottom: 24px;
   }
 
   .registerText {
@@ -72,49 +162,11 @@
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0%;
+    color: #010101;
   }
 
-  .registerContainer {
-    background: url(../../assets/bgMob.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+  .registerLeftBox {
+    /* margin-right: 32px; */
+    width: 336px;
   }
-
-  .registerTitle {
-    font-family: Montserrat;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 40px;
-    letter-spacing: 0%;
-  }
-
-  .timerTitle {
-    font-family: Montserrat;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 28px;
-    letter-spacing: 0%;
-    text-align: center;
-  }
-
-  .formBtnSubmit {
-    width: 100%;
-    background-color: #0f7c41;
-    color: white;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0%;
-    text-align: center;
-    padding: 16px 0;
-    border: none;
-    cursor: pointer;
-  }
-}
-
-@media (min-width: 768px) {
-  /* .registerContainer {
-    background: url(../../assets/bg.png);
-  } */
 }

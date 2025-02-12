@@ -1,11 +1,11 @@
 import css from "./ModalRegistration.module.css";
-// import Timer from "/src/components/Timer";
+import { Timer } from "../../components/Timer/Timer";
 import { useForm } from "react-hook-form";
 
 import logo from "../../assets/icons/logo.svg";
-import close from "../../assets/icons/close.svg";
 import flag from "../../assets/icons/flag.svg";
 import checkpoint from "../../assets/icons/checkpoint.svg";
+import { IoMdClose } from "react-icons/io";
 
 export const ModalRegistration = ({ closeModal }) => {
   const {
@@ -26,18 +26,24 @@ export const ModalRegistration = ({ closeModal }) => {
 
       <div className={css.headerModal}>
         <img src={logo} alt="logo icon" className={css.logo} />
-        <button onClick={closeModal} className={css.closeBtn}>
-          <img src={close} alt="close icon" />
+        <button
+          type="button"
+          className={css.closeBtn}
+          onClick={closeModal}
+          aria-label="Close"
+        >
+          <IoMdClose style={{ width: "32px", height: "32px" }} />
         </button>
+        ;
       </div>
 
       <div className={css.timerBox}>
         <h2 className={css.timerTitle}>Реєструйся просто зараз</h2>
 
-        {/* <Timer /> */}
+        <Timer />
       </div>
 
-      <form onSubmit={handleSubmit(onSubmit)} className={css.Wrapper}>
+      <form onSubmit={handleSubmit(onSubmit)} className={css.containerForm}>
         <div className={css.inputWrapper}>
           <input
             {...register("name", { required: true })}

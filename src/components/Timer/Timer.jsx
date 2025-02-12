@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import css from "./Timer.module.css";
 
-export function Timer() {
+export const Timer = () => {
   const intervalRef = useRef(null);
 
   const [countDown, setCountDown] = useState({
@@ -82,4 +82,4 @@ export function Timer() {
       </div>
     </div>
   );
-}
+};

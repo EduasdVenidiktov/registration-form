@@ -2,11 +2,11 @@ import Modal from "react-modal";
 
 const modalStyles = {
   overlay: {
-    backgroundColor: "rgba(0, 0, 0, 0.7)",
+    backgroundColor: "rgba(0, 0, 0, 1)",
     zIndex: 2000,
   },
   content: {
-    top: "50%",
+    top: "40%",
     left: "50%",
     right: "auto",
     bottom: "auto",
@@ -14,7 +14,6 @@ const modalStyles = {
     transform: "translate(-50%, -50%)",
     backgroundColor: "transparent",
     border: "none",
-
     zIndex: 2001,
   },
 };
