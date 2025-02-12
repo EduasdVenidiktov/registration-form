@@ -1,8 +1,9 @@
-/* .modalContainer {
+.modalContainer {
   display: flex;
   justify-content: flex-end;
   max-width: 360px;
   background-color: rgb(190, 217, 241);
+  /* margin: 0 auto; */
   position: relative;
 }
 
@@ -100,7 +101,11 @@
 }
 
 .modalOverlay {
- 
+  /* position: absolute;
+  top: 10%;
+  left: 52.8%;
+  width: 100%;
+  display: flex; */
 
   position: absolute;
   top: 46%;
@@ -110,7 +115,7 @@
 
 .modalContent {
   position: relative;
-  max-width: 336px; 
+  max-width: 336px;
   background: #fff;
   padding: 30px 20px;
   border-color: none;
@@ -127,7 +132,7 @@
 @media (max-width: 768px) {
   .timerTitle,
   .modalContent .formBtnSubmit {
-    display: block; 
+    display: block; /* Покажемо ці елементи */
   }
 
   .closeBtn,
@@ -158,4 +163,4 @@
   .headerModal {
     margin-bottom: 0;
   }
-} */
+}
